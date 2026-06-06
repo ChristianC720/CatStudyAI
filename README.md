@@ -17,20 +17,6 @@ La base sigue una arquitectura por features sobre Next.js + TypeScript. El front
 - Strategy: permite variantes de comportamiento segun flujo o estado.
 - Container and Presentational: separa coordinacion de datos y renderizado.
 
-## Justificacion
-
-El frontend tendra flujos asincronos distintos y multiples modulos funcionales. Organizar por features permite escalar sin mezclar responsabilidades y mejora mantenibilidad.
-
-## Git Flow recomendado
-
-Se adopta Git Flow para tener releases previsibles y trabajo paralelo sin bloquear al equipo.
-
-- `main`: versiones aprobadas para despliegue.
-- `develop`: integracion funcional continua.
-- `feature/*`: implementacion de capacidades nuevas.
-- `release/*`: estabilizacion y validacion previa a entrega.
-- `hotfix/*`: solucion urgente en produccion.
-
 ## Estructura actual
 
 - `app/`: enrutado y capa de pagina.
@@ -53,7 +39,7 @@ Se adopta Git Flow para tener releases previsibles y trabajo paralelo sin bloque
 
 Se usan archivos `init.ts` y `init.txt` como placeholders para mantener la estructura visible en GitHub durante la fase de prototipo.
 
-## Flujo recomendado
+## Flujo
 
 1. `lib/api` obtiene datos y maneja errores de transporte.
 2. `features/*` organiza logica de caso de uso por dominio.
